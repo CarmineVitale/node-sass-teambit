@@ -1,8 +1,5 @@
-$col: red;
+@import 'partials/variables';
+@import 'partials/mixin';
+@import 'partials/commons';
+@import 'partials/header';
 
-h1 {
-    color: $col;
-}
-p {
-    color: $col;
-}

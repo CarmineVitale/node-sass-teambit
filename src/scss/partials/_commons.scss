@@ -1,0 +1,14 @@
+//General
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.app {
+    max-width: $maxwidth;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}

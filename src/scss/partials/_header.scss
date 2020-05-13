@@ -1,0 +1,34 @@
+
+.main-header {
+    @include flex(space-between, center);
+    border-bottom: 1px solid $font-color;
+    padding: 15px;
+    li {
+        @include mylist;
+        a {
+            color: $font-color;
+            margin: 0 15px;
+            &:hover {
+                color: $btn-col;
+            }
+        } 
+        &.sign {
+
+            border: 1px solid $btn-col;
+            padding: 6px;
+            border-radius: 10px;
+            &:hover {
+                background: $btn-col;
+                color: white;
+            }
+            
+            img {
+                width: 20px;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+            
+        }   
+    }
+}
+

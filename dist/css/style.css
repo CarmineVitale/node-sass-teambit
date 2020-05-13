@@ -1,9 +1,56 @@
-h1 {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  color: red;
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #58402c;
+  padding: 15px;
+}
+
+.main-header li {
+  display: inline-block;
+  list-style: none;
+}
+
+.main-header li a {
+  color: #58402c;
+  margin: 0 15px;
+}
+
+.main-header li a:hover {
+  color: #2e4691;
+}
+
+.main-header li.sign {
+  border: 1px solid #2e4691;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.main-header li.sign:hover {
+  background: #2e4691;
+  color: white;
+}
+
+.main-header li.sign img {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 
