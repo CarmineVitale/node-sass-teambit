@@ -4,11 +4,31 @@
     margin: 0;
     padding: 0;
 }
+body {
+    color: $font-color;
+    font-family: 'Open Sans', sans-serif;
+}
 .app {
+    padding-top: 10px;
     max-width: $maxwidth;
     margin: 0 auto;
 }
 a {
     text-decoration: none;
     cursor: pointer;
+}
+img.logo {
+    width: 20px;
+}
+button.bigbtn {
+    background: $btn-col;
+    width: 180px;
+    padding: 8px 13px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: white;
+    line-height: 15px;
+    &:hover {
+        background: #233569;
+    }
 }

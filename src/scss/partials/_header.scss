@@ -31,4 +31,43 @@
         }   
     }
 }
-
+.jumbo-header {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    display: flex;
+    .jumbo-header-right {
+        flex-basis: calc(100% /2);
+        h1 {
+            width: 510px;
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+        p:first-of-type {
+            font-size: 25px;
+            line-height: 45px;
+            margin-bottom: 30px;
+        }
+        .bottoni {
+            @include flex(space-between, center);
+            margin-bottom: 30px;
+            max-width: 400px;
+            img {
+                vertical-align: middle;
+                margin-right: 8px;
+            }
+        }
+        a {
+            color: #58402c;
+            &:hover {
+                color:$btn-col;
+            }
+        }
+    }
+    .jumbo-header-left {
+        flex-basis: calc(100% /2);
+        img {
+            width: 570px;
+        }
+    }
+}
