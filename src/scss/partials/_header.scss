@@ -1,4 +1,10 @@
 
+header {
+    .content {
+        max-width: $maxwidth;
+        margin: 0 auto;
+    }
+}
 .main-header {
     @include flex(space-between, center);
     border-bottom: 1px solid $font-color;

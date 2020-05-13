@@ -11,8 +11,6 @@ body {
 
 .app {
   padding-top: 10px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 a {
@@ -36,6 +34,11 @@ button.bigbtn {
 
 button.bigbtn:hover {
   background: #233569;
+}
+
+header .content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .main-header {
@@ -127,6 +130,69 @@ button.bigbtn:hover {
 
 .jumbo-header .jumbo-header-left img {
   width: 570px;
+}
+
+main {
+  background: #ffe7d2;
+  padding-top: 50px;
+}
+
+.turnover {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+.turnover h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 700px;
+  text-align: center;
+}
+
+.turnover .container {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turnover .container .card {
+  flex-basis: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.turnover .container .card img {
+  width: 150px;
+  height: 110px;
+  margin-bottom: 40px;
+}
+
+.turnover .container .card p {
+  text-align: center;
+  width: 200px;
+  margin-top: 30px;
+}
+
+.turnover .rabbit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.turnover .rabbit img {
+  width: 300px;
+}
+
+.turnover .rabbit p {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 

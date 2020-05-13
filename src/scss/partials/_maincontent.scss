@@ -1,0 +1,51 @@
+main {
+    background: $primary-color;
+    padding-top: 50px;
+}
+.turnover {
+    max-width: $maxwidth;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 700px;
+        text-align: center;
+        
+    }
+    .container {
+        margin-bottom: 60px;
+        @include flex(center, center);
+        .card {
+            flex-basis: 300px;
+            @include flex(center, center);
+            flex-direction: column;
+
+            img {  
+                width: 150px;
+                height: 110px;
+                margin-bottom: 40px;
+            }
+            p {
+                text-align: center;
+                width: 200px;
+                margin-top: 30px;
+            }
+           
+        }
+    }
+    .rabbit {
+        @include flex(center, center);
+        flex-direction: column;
+        margin-bottom: 70px;
+        img {
+            width: 300px;
+        }
+        p {
+            margin-top: 50px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+    }
+    
+}
