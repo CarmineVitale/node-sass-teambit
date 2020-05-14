@@ -11,6 +11,7 @@ header {
     padding: 15px;
     li {
         @include mylist;
+        position: relative;
         a {
             color: $font-color;
             margin: 0 15px;
@@ -37,6 +38,24 @@ header {
         }   
     }
 }
+ul.dropdown {
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100px;
+    background: white;
+    box-shadow: 0px 0px 10px 1px rgba(56,53,56,1);
+    transition: opacity .3s linear;
+    li {
+        display: block;
+        padding: 5px;
+    }
+} 
+li.menu-drop:hover ul.dropdown {
+    opacity: 1;
+}
+
 .jumbo-header {
     margin-top: 100px;
     margin-bottom: 60px;

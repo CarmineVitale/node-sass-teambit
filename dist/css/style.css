@@ -45,6 +45,8 @@ header .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   border-bottom: 1px solid #58402c;
   padding: 15px;
 }
@@ -52,6 +54,7 @@ header .content {
 .main-header li {
   display: inline-block;
   list-style: none;
+  position: relative;
 }
 
 .main-header li a {
@@ -78,6 +81,26 @@ header .content {
   width: 20px;
   margin-right: 5px;
   vertical-align: middle;
+}
+
+ul.dropdown {
+  opacity: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100px;
+  background: white;
+  box-shadow: 0px 0px 10px 1px #383538;
+  transition: opacity 0.3s linear;
+}
+
+ul.dropdown li {
+  display: block;
+  padding: 5px;
+}
+
+li.menu-drop:hover ul.dropdown {
+  opacity: 1;
 }
 
 .jumbo-header {
@@ -107,6 +130,8 @@ header .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin-bottom: 30px;
   max-width: 400px;
 }
@@ -155,6 +180,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .turnover .container .card {
@@ -163,6 +190,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .turnover .container .card img {
@@ -182,6 +210,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: nowrap;
   margin-bottom: 70px;
 }
 
@@ -205,17 +234,23 @@ img.image-txt {
   margin-top: 40px;
 }
 
+.dialog-text h2 {
+  width: 380px;
+}
+
 .dialog-text p {
-  margin: 30px 0;
+  margin: 70px 0;
+  width: 400px;
 }
 
 .dialog {
-  max-width: 1200px;
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .dialog:nth-child(even) .dialog-image {
@@ -224,6 +259,7 @@ img.image-txt {
 
 .dialog:nth-child(even) .dialog-text {
   order: 0;
+  margin-left: 380px;
 }
 
 .dialog .dialog-image,

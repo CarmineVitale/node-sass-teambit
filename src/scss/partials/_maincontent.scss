@@ -18,8 +18,8 @@ main {
         @include flex(center, center);
         .card {
             flex-basis: 300px;
-            @include flex(center, center);
-            flex-direction: column;
+            @include flex(center, center,column);
+            //flex-direction: column;
 
             img {  
                 width: 150px;
@@ -35,8 +35,8 @@ main {
         }
     }
     .rabbit {
-        @include flex(center, center);
-        flex-direction: column;
+        @include flex(center, center, column);
+        //flex-direction: column;
         margin-bottom: 70px;
         img {
             width: 300px;

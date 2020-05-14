@@ -10,8 +10,12 @@ img.image-txt {
 }
 // titoli e paragrafi per queste sezione
 .dialog-text {
+    h2 {
+        width: 380px;
+    }
     p {
-        margin: 30px 0;
+        margin: 70px 0;
+        width: 400px;
     }
 }
 
@@ -19,17 +23,22 @@ img.image-txt {
 
 
 .dialog {
-    max-width: $maxwidth;
+    //max-width: $maxwidth;
     margin: 0 auto;
     margin-top: 100px;
-    @include flex(center, flex-start);
+    @include flex(center);
     &:nth-child(even) {
+
         .dialog-image {
             order: 1;
         }
         .dialog-text {
             order: 0;
+            margin-left: 380px;
         }
+    }
+    &:nth-child(odd) {
+        
     }
     
 
