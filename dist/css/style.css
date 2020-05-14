@@ -195,4 +195,40 @@ main {
   font-weight: bold;
 }
 
+img.window {
+  max-width: 760px;
+}
+
+img.image-txt {
+  max-width: 270px;
+  display: block;
+  margin-top: 40px;
+}
+
+.dialog-text p {
+  margin: 30px 0;
+}
+
+.dialog {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dialog:nth-child(even) .dialog-image {
+  order: 1;
+}
+
+.dialog:nth-child(even) .dialog-text {
+  order: 0;
+}
+
+.dialog .dialog-image,
+.dialog .dialog-text {
+  flex-basis: calc(100% /2);
+}
+
 
