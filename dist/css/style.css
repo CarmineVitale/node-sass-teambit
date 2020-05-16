@@ -462,21 +462,25 @@ img.image-txt {
   margin-right: 10px;
 }
 
-.footer-content .footer-menu {
+.footer-content .footer-list {
+  display: flex;
+}
+
+.footer-content .footer-list .footer-menu {
   width: 200px;
 }
 
-.footer-content .footer-menu ul {
+.footer-content .footer-list .footer-menu ul {
   list-style: none;
   margin-left: 20px;
 }
 
-.footer-content .footer-menu ul li:first-child {
+.footer-content .footer-list .footer-menu ul li:first-child {
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-.footer-content .footer-menu ul li {
+.footer-content .footer-list .footer-menu ul li {
   line-height: 30px;
 }
 
@@ -505,6 +509,17 @@ img.image-txt {
   footer .footer-content .footer-title img {
     width: 50px;
     margin-bottom: 20px;
+  }
+
+  footer .footer-content .footer-list {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  footer .footer-content .footer-list .footer-menu {
+    flex-basis: 50%;
+    margin-bottom: 30px;
   }
 }
 

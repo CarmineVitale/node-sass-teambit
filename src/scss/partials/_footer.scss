@@ -10,22 +10,24 @@
             margin-right: 10px;
         }
     }
-    .footer-menu {
-        width: 200px;
-        ul {
-            //width: 150px;
-            list-style: none;
-            margin-left: 20px;
-            li:first-child {
-                font-weight: bold;
-                margin-bottom: 8px;
-            }
-            li {
-                //margin-bottom: 14px;
-                line-height: 30px;
+    .footer-list {
+        display: flex;
+        .footer-menu {
+            width: 200px;
+            ul {
+                list-style: none;
+                margin-left: 20px;
+                li:first-child {
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                }
+                li {
+                    line-height: 30px;
+                }
             }
         }
     }
+
 
 }
 
@@ -44,6 +46,15 @@
             }
             .footer-menu {
                
+            }
+            .footer-list {
+                display: flex;
+                max-width: 100%;
+                flex-wrap: wrap;
+                .footer-menu {
+                    flex-basis: 50%;
+                    margin-bottom: 30px;
+                }
             }
         }
     }
