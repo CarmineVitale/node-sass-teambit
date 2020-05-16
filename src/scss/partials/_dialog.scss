@@ -37,9 +37,6 @@ img.image-txt {
             margin-left: 380px;
         }
     }
-    &:nth-child(odd) {
-        
-    }
     
 
     .dialog-image, 
@@ -48,3 +45,17 @@ img.image-txt {
     }
 }
 
+@media all and (max-width:780px) {
+    .dialog {
+        @include flex(center, center, column);
+        &:nth-child(even) {
+            .dialog-image {
+                order: 0;
+            }
+            .dialog-text {
+                order: 1;
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ main {
             //flex-direction: column;
 
             img {  
-                width: 150px;
+                // width: 150px;
                 height: 110px;
                 margin-bottom: 40px;
             }
@@ -48,4 +48,14 @@ main {
         }
     }
     
+}
+
+@media all and (max-width:780px) {
+    main {
+        .turnover {
+            .container {
+                display: block;
+            }
+        }
+    } 
 }

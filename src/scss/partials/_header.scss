@@ -10,7 +10,8 @@ header {
     border-bottom: 1px solid $font-color;
     padding: 15px;
     .menu {
-        i {
+        i.fa-bars,
+        i.fa-times {
             display: none;
         }
         .respmenu {
@@ -105,8 +106,9 @@ li.menu-drop:hover ul.dropdown {
     }
 }
 
-@media all and (max-width:600px) {
+@media all and (max-width:780px) {
     header {
+        text-align: center;
         .main-header {
             .menu {
                 position: relative;
@@ -152,6 +154,18 @@ li.menu-drop:hover ul.dropdown {
                 }
             }
 
+        }
+    }
+    .jumbo-header {
+        display: block;
+        .jumbo-header-right {
+            h1 {
+                width: 100%;
+            }
+            .bottoni {
+                max-width: 100%;
+                @include flex(space-around, center, row)
+            }
         }
     }
 
